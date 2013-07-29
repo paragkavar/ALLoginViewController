@@ -18,6 +18,12 @@
 		751384CA17A6523D0026DC78 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 751384C917A6523D0026DC78 /* Default-568h@2x.png */; };
 		751384CD17A6523D0026DC78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751384CC17A6523D0026DC78 /* ViewController.m */; };
 		751384D017A6523D0026DC78 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751384CE17A6523D0026DC78 /* ViewController.xib */; };
+		751384DA17A654710026DC78 /* ATAnimationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 751384D917A654710026DC78 /* ATAnimationImageView.m */; };
+		751384E017A670060026DC78 /* login0_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751384DF17A670060026DC78 /* login0_image.png */; };
+		751384E417A670430026DC78 /* login3_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751384E117A670430026DC78 /* login3_image.png */; };
+		751384E517A670430026DC78 /* login2_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751384E217A670430026DC78 /* login2_image.png */; };
+		751384E617A670430026DC78 /* login1_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 751384E317A670430026DC78 /* login1_image.png */; };
+		7548793A17A682E100CCBE60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7548793917A682E100CCBE60 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,13 @@
 		751384CB17A6523D0026DC78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		751384CC17A6523D0026DC78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		751384CF17A6523D0026DC78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		751384D817A654710026DC78 /* ATAnimationImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimationImageView.h; sourceTree = "<group>"; };
+		751384D917A654710026DC78 /* ATAnimationImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimationImageView.m; sourceTree = "<group>"; };
+		751384DF17A670060026DC78 /* login0_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login0_image.png; sourceTree = "<group>"; };
+		751384E117A670430026DC78 /* login3_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login3_image.png; sourceTree = "<group>"; };
+		751384E217A670430026DC78 /* login2_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login2_image.png; sourceTree = "<group>"; };
+		751384E317A670430026DC78 /* login1_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login1_image.png; sourceTree = "<group>"; };
+		7548793917A682E100CCBE60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7548793A17A682E100CCBE60 /* QuartzCore.framework in Frameworks */,
 				751384B417A6523D0026DC78 /* UIKit.framework in Frameworks */,
 				751384B617A6523D0026DC78 /* Foundation.framework in Frameworks */,
 				751384B817A6523D0026DC78 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +70,7 @@
 		751384A717A6523D0026DC78 = {
 			isa = PBXGroup;
 			children = (
+				7548793917A682E100CCBE60 /* QuartzCore.framework */,
 				751384B917A6523D0026DC78 /* ATLoginViewController */,
 				751384B217A6523D0026DC78 /* Frameworks */,
 				751384B117A6523D0026DC78 /* Products */,
@@ -88,6 +103,8 @@
 				751384CB17A6523D0026DC78 /* ViewController.h */,
 				751384CC17A6523D0026DC78 /* ViewController.m */,
 				751384CE17A6523D0026DC78 /* ViewController.xib */,
+				751384D817A654710026DC78 /* ATAnimationImageView.h */,
+				751384D917A654710026DC78 /* ATAnimationImageView.m */,
 				751384BA17A6523D0026DC78 /* Supporting Files */,
 			);
 			path = ATLoginViewController;
@@ -96,6 +113,10 @@
 		751384BA17A6523D0026DC78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				751384E117A670430026DC78 /* login3_image.png */,
+				751384E217A670430026DC78 /* login2_image.png */,
+				751384E317A670430026DC78 /* login1_image.png */,
+				751384DF17A670060026DC78 /* login0_image.png */,
 				751384BB17A6523D0026DC78 /* ATLoginViewController-Info.plist */,
 				751384BC17A6523D0026DC78 /* InfoPlist.strings */,
 				751384BF17A6523D0026DC78 /* main.m */,
@@ -163,6 +184,10 @@
 				751384C817A6523D0026DC78 /* Default@2x.png in Resources */,
 				751384CA17A6523D0026DC78 /* Default-568h@2x.png in Resources */,
 				751384D017A6523D0026DC78 /* ViewController.xib in Resources */,
+				751384E017A670060026DC78 /* login0_image.png in Resources */,
+				751384E417A670430026DC78 /* login3_image.png in Resources */,
+				751384E517A670430026DC78 /* login2_image.png in Resources */,
+				751384E617A670430026DC78 /* login1_image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +201,7 @@
 				751384C017A6523D0026DC78 /* main.m in Sources */,
 				751384C417A6523D0026DC78 /* AppDelegate.m in Sources */,
 				751384CD17A6523D0026DC78 /* ViewController.m in Sources */,
+				751384DA17A654710026DC78 /* ATAnimationImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +324,7 @@
 				751384D517A6523D0026DC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

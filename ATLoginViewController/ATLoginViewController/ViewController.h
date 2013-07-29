@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
 
+    int i;
+}
+
+@property (nonatomic,retain)IBOutlet UIImageView *imgView;
 @end

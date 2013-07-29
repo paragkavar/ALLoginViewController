@@ -14,11 +14,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+   // [self WrtiteFile];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -47,6 +49,25 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+-(void)WrtiteFile{
+
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ImageArray.plist"];
+    NSLog(@"filePath %@", filePath);
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) { // if file is not exist, create it.
+        NSString *helloStr = @"hello world";
+        NSError *error;
+        [helloStr writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    }
+    
+    if ([[NSFileManager defaultManager] isWritableFileAtPath:filePath]) {
+        NSLog(@"Writable");
+    }else {
+        NSLog(@"Not Writable");
+    }
 }
 
 @end
